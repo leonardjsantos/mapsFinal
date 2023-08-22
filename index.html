@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <!-- copy from leaflet.js -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+    <!-- my own docs -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Injustice Alert: Mapping Anti-LGBTQ+ Legislation</title>
+</head>
+<body>
+    <header>
+        <h1>Injustice Alert: Mapping Anti-LGBTQ+ Legislation</h1>
+        <h2>Click on Your State and Call the Number to Demand Change!</h2>
+        <h3>by Leonard Santos</h3>
+    </header>
+    
+    <div class="main">
+        <p>In wake of the wave of the many bills attacking the LGBTQ+ community in 2023, 
+            this site is dedicated to showing which bills are still active so that 
+            supporters and advocates have the tools they need to fight them.
+        </p>
+        <p>
+            All of the highlighted states have bills that are currently being debated on the 
+            Senate and House floors. Click on your state and call the number listed to advocate for change!
+        </p>
+
+        <p class="callInfoHeader">
+            You can call the number, use this script to guide you:
+        </p>
+        <p class="callInfo">
+            "Hello, I am a constituent living in [STATE] and I'm calling about [BILL]. I ask that you vote to oppose this bill, as well as any other bill, that discriminates against the LGBTQ+ community. Thank you for your time and support."
+        </p>
+        
+    </div>
+
+    <div id="mapArea">
+        <div id="clicked-data">
+            <h3>Click on your state to learn about the anti-LGBTQ+ bills that you can advocate against!</h3>
+        </div>
+        <div id="map"></div>
+    </div>
+    
+
+    <span class="break"></span>
+
+   
+    
+
+</body>
+<script src="script.js"></script>
+
+</html>
